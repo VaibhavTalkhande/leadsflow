@@ -17,6 +17,7 @@ const solutions = [
 const Infosection = () => {
   return (
     <div className='relative w-full py-16 px-2 sm:px-4 md:px-12 bg-black text-white overflow-hidden'>
+        
       <div className="container mx-auto px-2 sm:px-4 md:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-[#53c926] drop-shadow break-words leading-tight text-center">
           Making Your Life Easier

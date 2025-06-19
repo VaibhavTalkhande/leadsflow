@@ -9,6 +9,7 @@ import Infosection from './components/Infosection'
 import ribbon from './assets/ribbon_Vector-p-2600.png'
 import Services from './components/Services'
 import Expertise from './components/Expertise'
+import Work from './components/Work'
 
 function App() {
   return (
@@ -36,44 +37,7 @@ function App() {
       <Expertise/>
 
       {/* Our Work Section */}
-      <section id="work" className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">Our Work</h2>
-          <div className="flex flex-wrap justify-center space-x-2 md:space-x-6 mb-8 md:mb-12">
-            <button className="px-4 py-1 md:px-6 md:py-2 bg-green-600 text-white rounded-lg text-sm md:text-base">Instagram</button>
-            <button className="px-4 py-1 md:px-6 md:py-2 bg-zinc-800 text-gray-300 rounded-lg hover:bg-green-600 transition duration-300 text-sm md:text-base">Youtube</button>
-            <button className="px-4 py-1 md:px-6 md:py-2 bg-zinc-800 text-gray-300 rounded-lg hover:bg-green-600 transition duration-300 text-sm md:text-base">LinkedIn</button>
-          </div>
-          {/* Placeholder for Instagram embeds - actual embeds would require a different approach for security/privacy */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by KodNest</p>
-              <a href="https://www.instagram.com/kodnest/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by Coding Ninjas</p>
-              <a href="https://www.instagram.com/coding.ninjas/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by GeeksforGeeks</p>
-              <a href="https://www.instagram.com/geeks_for_geeks/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by pwvidyapeeth tamil nadu</p>
-              <a href="https://www.instagram.com/pwvidyapeeth_tamilnadu/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by Siddharth Tiwari (Hypertroph)</p>
-              <a href="https://www.instagram.com/hypertroph/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-            <div className="bg-black p-4 border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <p className="text-sm md:text-gray-400">Instagram post by Spectrum</p>
-              <a href="https://www.instagram.com/spectrumddn/" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:underline text-sm md:text-base">View on Instagram</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <Work/>
       {/* Words From Our Clients Section */}
       <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
         <div className="container mx-auto px-6 text-center text-white">

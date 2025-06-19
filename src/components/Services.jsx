@@ -13,7 +13,7 @@ const services = [
     icon: <FaInstagram className="text-5xl md:text-6xl text-[#fd5949] drop-shadow" />, // Instagram
     pill: { text: 'Organic Growth', className: 'bg-[#53c926] text-black' },
     title: <>Conquer Insta with <span className="text-[#53c926] font-extrabold italic">Viral Content!</span></>,
-    desc: 'Short-form content is the future. At BrandFlowMedia, we craft your journey to getting viral on Insta with end-to-end management. We provide in-house production and confident creators who excel at hooking audiences.',
+    desc: 'Short-form content is the future. At LeadFlowMedia, we craft your journey to getting viral on Insta with end-to-end management. We provide in-house production and confident creators who excel at hooking audiences.',
   },
   {
     icon: <FaYoutube className="text-5xl md:text-6xl text-[#ff0000] drop-shadow" />, // YouTube
@@ -35,6 +35,7 @@ const Services = () => {
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926]">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
+            
           {services.map((service, idx) => (
             <div
               key={idx}
