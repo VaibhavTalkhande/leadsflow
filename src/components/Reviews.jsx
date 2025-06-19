@@ -76,17 +76,17 @@ const Reviews = () => {
   const totalSlides = Math.ceil(reviews.length / cardsPerView);
 
   return (
-    <section className="w-full py-12 sm:py-16 bg-black relative overflow-hidden flex flex-col justify-center" id="reviews">
+    <section className="w-full py-8 sm:py-12 md:py-16 bg-black relative overflow-hidden flex flex-col justify-center" id="reviews">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 flex flex-col justify-center h-full">
-        <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-10 text-center text-[#53c926]">Words from Our Clients</h2>
+        <h2 className="text-xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-8 md:mb-10 text-center text-[#53c926]">Words from Our Clients</h2>
         <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-auto">
-          <div className="relative flex items-center justify-center h-auto min-h-[320px] sm:min-h-[360px] md:min-h-[400px]">
+          <div className="relative flex items-center justify-center h-auto min-h-[260px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[420px]">
             {/* Left Button */}
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-[#53c926] text-black p-2 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
+              className="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
@@ -96,20 +96,20 @@ const Reviews = () => {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                  <div key={slideIndex} className="w-full flex-shrink-0 px-2">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 px-10 lg:grid-cols-3 gap-6 items-stretch">
+                  <div key={slideIndex} className="w-full flex-shrink-0 px-1 sm:px-2 md:px-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-stretch">
                       {reviews
                         .slice(
                           slideIndex * cardsPerView,
                           (slideIndex + 1) * cardsPerView
                         )
                         .map((review, idx) => (
-                          <div key={idx} className="bg-black border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] p-4 sm:p-7 md:p-10 flex flex-col items-center text-center min-h-[320px] sm:min-h-[360px] md:min-h-[400px] h-[320px] sm:h-[360px] md:h-[400px] max-w-full transition-all duration-500 justify-between">
-                            <svg className="w-6 h-6 sm:w-8 sm:h-8 mb-3 sm:mb-4 text-[#53c926]" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 8A5.001 5.001 0 0 1 12 3v2a3 3 0 0 0-3 3c0 1.31.84 2.42 2.03 2.83A3.001 3.001 0 0 1 15 15v2a5.001 5.001 0 0 1-4.83-7H7.17z"/></svg>
-                            <p className="text-sm sm:text-lg md:text-xl text-white font-medium mb-4 sm:mb-6 break-words whitespace-pre-line flex-1">{review.text}</p>
-                            <div className="mt-auto pt-2">
-                              <div className="text-[#53c926] font-bold text-sm sm:text-lg">{review.name}</div>
-                              <div className="text-gray-300 text-xs sm:text-sm md:text-base">{review.title}</div>
+                          <div key={idx} className="bg-black border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] p-3 sm:p-6 md:p-8 flex flex-col items-center text-center min-h-[220px] sm:min-h-[280px] md:min-h-[340px] h-[220px] sm:h-[280px] md:h-[340px] max-w-full transition-all duration-500 justify-between">
+                            <svg className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 mb-2 sm:mb-3 md:mb-4 text-[#53c926]" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 8A5.001 5.001 0 0 1 12 3v2a3 3 0 0 0-3 3c0 1.31.84 2.42 2.03 2.83A3.001 3.001 0 0 1 15 15v2a5.001 5.001 0 0 1-4.83-7H7.17z"/></svg>
+                            <p className="text-xs sm:text-base md:text-lg text-white font-medium mb-2 sm:mb-4 md:mb-6 break-words whitespace-pre-line flex-1">{review.text}</p>
+                            <div className="mt-auto pt-1 sm:pt-2">
+                              <div className="text-[#53c926] font-bold text-xs sm:text-base md:text-lg">{review.name}</div>
+                              <div className="text-gray-300 text-[10px] sm:text-xs md:text-sm lg:text-base">{review.title}</div>
                             </div>
                           </div>
                         ))}
@@ -121,20 +121,20 @@ const Reviews = () => {
             {/* Right Button */}
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-[#53c926] text-black p-2 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
+              className="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
           {/* Dots Indicator */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-6 sm:mt-8 space-x-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors duration-300 border-2 border-[#53c926] ${index === currentIndex ? 'bg-[#53c926]' : 'bg-black'}`}
+                className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-colors duration-300 border-2 border-[#53c926] ${index === currentIndex ? 'bg-[#53c926]' : 'bg-black'}`}
               />
             ))}
           </div>
