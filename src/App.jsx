@@ -6,13 +6,12 @@ import About from './components/About'
 import ClientCards from './components/ClientCards'
 import MarqueeSection from './components/MarqueeSection'
 import Infosection from './components/Infosection'
-
+import ribbon from './assets/ribbon_Vector-p-2600.png'
+import Services from './components/Services'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#00181c] text-white font-sans"
-    style={{
-      background: 'radial-gradient(circle at center, #00181c 0%,#00181c 100%)'}}>
+    <div className="min-h-screen bg-slate-950 text-white font-sans">
 
       {/* Hero Section */}
 
@@ -23,38 +22,14 @@ function App() {
 
       {/* About BrandFlow Section */}
       <About />
-
+      
       {/* Making Your Life Easier Section */}
-      <Infosection/>
-
+      <div className="relative w-full py-16 px-4 md:px-12 bg-black text-white overflow-hidden">
+        <img src={ribbon} alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
+       <Infosection/>
       {/* Our Services Section */}
-      <section id="services" className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-2">Organic Growth</h3>
-              <p className="text-green-500 text-lg md:text-xl mb-4">Conquer Insta with<br/>‍Viral Content!</p>
-              <p className="text-sm md:text-base text-gray-400">Short-form content is the future. At BrandFlowMedia, we craft your journey to getting viral on Insta with end-to-end management. We provide in-house production and confident creators who excel at hooking audiences.</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-2">Loyal Community</h3>
-              <p className="text-green-500 text-lg md:text-xl mb-4">Rule YT with<br/>‍Storytelling!</p>
-              <p className="text-sm md:text-base text-gray-400">Let your brand story resonate with your target audience through our creative storytelling. From detailed research, scripting, and high production quality to seamless editing and insightful analytics, we've got your back.</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-2">Consultation</h3>
-              <p className="text-green-500 text-lg md:text-xl mb-4">Consultation by<br/>Founder & Team</p>
-              <p className="text-sm md:text-base text-gray-400">We've spent years growing multiple brands from scratch to communities of over 5M+ in total. We know how to make your content stand out and go viral.Want us to guide your in-house team to 2x your growth?Looking to build a strong personal brand?</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-2xl md:text-3xl font-semibold mb-2">Lead Generation</h3>
-              <p className="text-green-500 text-lg md:text-xl mb-4">Ace LinkedIn with<br/>‍Brand Persona!</p>
-              <p className="text-sm md:text-base text-gray-400">Let's make your brand standout with a full personalized profile optimization. We specialize in crafting creative banners and informative carousels. Our content includes strong CTA, strategic keywords, and engaging stories.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <Services/>
+      </div>
 
       {/* Our Expertise Section */}
       <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
