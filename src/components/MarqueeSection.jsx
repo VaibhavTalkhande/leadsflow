@@ -20,7 +20,7 @@ const MarqueeSection = () => {
       className="w-full py-8 md:py-12 bg-black relative overflow-hidden"
 
     >
-      <div className="max-w-5xl mx-auto px-4 w-1/2">
+      <div className="max-w-5xl mx-auto px-4 w-1/2 inline">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white text-center mb-6 animate-fadeInUp drop-shadow-lg">
           <span className="text-[#53c926]">We're available in</span> these countries
         </h2>

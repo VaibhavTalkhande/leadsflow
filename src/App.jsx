@@ -11,6 +11,9 @@ import Services from './components/Services'
 import Expertise from './components/Expertise'
 import Work from './components/Work'
 import Reviews from './components/Reviews'
+import Founders from './components/Founders'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -43,79 +46,13 @@ function App() {
       <Reviews/>
 
       {/* About Team Section */}
-      <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">About Team</h2>
-          <div className="max-w-xl md:max-w-4xl mx-auto text-base md:text-lg leading-relaxed mb-8 md:mb-12">
-            <p className="mb-2 md:mb-4"><strong>BrandFlow Media</strong></p>
-            <p className="mb-2 md:mb-4">Branding Strategist, Self-Growth Coach & a Storyteller</p>
-            <p className="mb-2 md:mb-4">Co-founded by Sandeep Verma, a Computer Science graduate from IIITD, BrandFlow Media is powered by a team of experienced professionals from top institutes like IITs and NITs.</p>
-            <p className="mb-2 md:mb-4">From skilled writers, strategists, and content creators to creative directors, cameramen, and production heads, we're united by a shared passion for storytelling and quality. With strong industry exposure and expertise across popular niches, we deliver top-notch creative work, all at affordable rates.</p>
-            <p className="italic">With strong industry exposure and expertise across popular niches, we deliver top-notch creative work, all at affordable rates.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Designing Brand Identity.</h3>
-            </div>
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Optimizing content strategies to go viral.</h3>
-            </div>
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Hooking audiences through storytelling.</h3>
-            </div>
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Improving engagement through call-to-action.</h3>
-            </div>
-          </div>
-          {/* Team Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 mb-8 md:mb-12">
-            <div><h3 className="text-4xl md:text-5xl font-bold">500k+</h3></div>
-            <div><h3 className="text-4xl md:text-5xl font-bold">400k+</h3></div>
-            <div><h3 className="text-4xl md:text-5xl font-bold">50k+</h3></div>
-            <div><h3 className="text-4xl md:text-5xl font-bold">750k+</h3></div>
-            <div><h3 className="text-4xl md:text-5xl font-bold">30M+</h3></div>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">Meet Our Team</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Harman Singh</h3>
-              <p className="text-sm md:text-gray-400">Branding Strategist</p>
-              <p className="text-sm md:text-gray-400">Direction & Production</p>
-              <p className="text-sm md:text-gray-400">Storyteller</p>
-            </div>
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Sandeep Verma</h3>
-              <p className="text-sm md:text-gray-400">Marketing & Sales</p>
-              <p className="text-sm md:text-gray-400">Relationship Manager</p>
-              <p className="text-sm md:text-gray-400">Operations</p>
-            </div>
-            <div className="p-4 md:p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Anushka Singh</h3>
-              <p className="text-sm md:text-gray-400">Content Marketing</p>
-              <p className="text-sm md:text-gray-400">Research & Analytics</p>
-              <p className="text-sm md:text-gray-400">Human Resource</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Founders/>
 
       {/* Contact Section */}
-      <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8 text-white text-center">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Got Query?</h2>
-          <h3 className="text-2xl md:text-3xl font-semibold mb-8">For pricing, Reach out to us</h3>
-          <button className="px-6 py-3 md:px-8 md:py-4 bg-[#53c926] text-black text-base md:text-xl font-extrabold border-4 border-white shadow-[-4px_4px_0px_0px_#00181c] rounded-none hover:bg-green-700 transition duration-300">Get In Touch</button>
-        </div>
-      </section>
 
+      <Contact />
       {/* Footer */}
-      <footer className="text-gray-400 p-6 md:p-8 text-center text-xs md:text-sm border-t-4 border-white mt-8">
-        <p>&copy; 2024 Welcome. All right reserved.</p>
-        <div className="flex justify-center space-x-2 md:space-x-4 mt-2">
-          <a href="#" className="hover:text-white">Privacy Policy</a>
-          <a href="#" className="hover:text-white">Terms of Service</a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

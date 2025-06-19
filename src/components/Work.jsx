@@ -72,7 +72,7 @@ const Work = () => {
         <div className="relative max-w-7xl mx-auto">
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex transition-transform duration-1000 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {Array.from({ length: totalSlides }).map((_, slideIndex) => (

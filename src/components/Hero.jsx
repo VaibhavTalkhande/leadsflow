@@ -6,6 +6,14 @@ import CountUp from 'react-countup'
 import { FaUsers, FaEye } from 'react-icons/fa'
 import { useInView } from 'react-intersection-observer';
 
+const navLinks = [
+  { label: 'Our Services', href: '#services' },
+  { label: 'Our Work', href: '#work' },
+  { label: 'Founders', href: '#founders' },
+  { label: 'Reviews', href: '#reviews' },
+  { label: 'Contact Us', href: '#contact', isButton: true },
+];
+
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [clientsKey, setClientsKey] = useState(0);
@@ -15,6 +23,25 @@ const Hero = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Smooth scroll for anchor links
+  React.useEffect(() => {
+    const handleSmoothScroll = (e) => {
+      if (e.target.tagName === 'A' && e.target.hash) {
+        const el = document.querySelector(e.target.hash);
+        if (el) {
+          e.preventDefault();
+          setIsMenuOpen(false);
+          window.scrollTo({
+            top: el.offsetTop - 40,
+            behavior: 'smooth',
+          });
+        }
+      }
+    };
+    document.addEventListener('click', handleSmoothScroll);
+    return () => document.removeEventListener('click', handleSmoothScroll);
+  }, [isMenuOpen]);
 
   return (
     <div className="relative flex flex-col bg-linear-60 items-center justify-center font-semibold text-center pt-5"
@@ -42,17 +69,29 @@ const Hero = () => {
         {/* Mobile Menu */}
         <div className={`fixed inset-0 bg-black bg-opacity-95 z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
           <ul className="flex flex-col items-center justify-center h-full space-y-8">
-            <li><a href="#services" className="text-gray-300 hover:text-white text-2xl block py-2 px-4" onClick={() => setIsMenuOpen(false)}>Our Services</a></li>
-            <li><a href="#work" className="text-gray-300 hover:text-white text-2xl block py-2 px-4" onClick={() => setIsMenuOpen(false)}>Our Work</a></li>
-            <li><button className="px-6 py-3 bg-[#53c926] text-black rounded-4xl hover:bg-green-700 transition duration-300 text-xl" onClick={() => setIsMenuOpen(false)}>Contact Us</button></li>
+            {navLinks.map(link => link.isButton ? (
+              <li key={link.label}>
+                <a href={link.href} className="px-6 py-3 bg-[#53c926] text-black rounded-4xl hover:bg-green-700 transition duration-300 text-xl block" onClick={() => setIsMenuOpen(false)}>{link.label}</a>
+              </li>
+            ) : (
+              <li key={link.label}>
+                <a href={link.href} className="text-gray-300 hover:text-white text-2xl block py-2 px-4" onClick={() => setIsMenuOpen(false)}>{link.label}</a>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex flex-row items-center space-x-8 text-xl font-semibold">
-          <li><a href="#services" className="text-gray-300 hover:text-white block py-2 px-4">Our Services</a></li>
-          <li><a href="#work" className="text-gray-300 hover:text-white block py-2 px-4">Our Work</a></li>
-          <li><button className="px-6 py-2 bg-[#53c926] text-black border-2 border-white shadow-[4px_4px_0px_0px_#53c926] rounded-md hover:bg-green-700 transition duration-300">Contact Us</button></li>
+          {navLinks.map(link => link.isButton ? (
+            <li key={link.label}>
+              <a href={link.href} className="px-6 py-2 bg-[#53c926] text-black border-2 border-white shadow-[4px_4px_0px_0px_#53c926] rounded-md hover:bg-green-700 transition duration-300">{link.label}</a>
+            </li>
+          ) : (
+            <li key={link.label}>
+              <a href={link.href} className="text-gray-300 hover:text-white block py-2 px-4">{link.label}</a>
+            </li>
+          ))}
         </ul>
       </div>
 
