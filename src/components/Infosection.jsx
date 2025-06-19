@@ -22,7 +22,7 @@ const Infosection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           {/* Problems Card */}
           <div className="bg-black border-2 border-[#ff234b] rounded-2xl shadow-xl p-8 sm:p-10 flex flex-col items-start relative animate-fadeInUp max-w-xl w-full mx-auto">
-            <div className="bg-white text-[#ff234b] text-xl sm:text-2xl font-semibold rounded-xl px-6 py-2 mb-6 w-full text-center">Problems</div>
+            <div className="bg-white text-[#ff234b] text-xl sm:text-2xl font-semibold rounded-xl px-6 py-2 mb-6 w-full text-center">😡Problems you face</div>
             <ul className="space-y-4 w-full">
               {problems.map((item, idx) => (
                 <div key={idx} className="bg-white/10 rounded-lg p-4 mb-2 flex flex-row items-center gap-4 w-full backdrop-blur-sm">
