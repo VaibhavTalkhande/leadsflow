@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import "tailwindcss";
 
+@keyframes slideLeftIn {
+  from { opacity: 0; transform: translateX(32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideLeftOut {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-32px); }
+}
+@keyframes slideRightIn {
+  from { opacity: 0; transform: translateX(-32px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideRightOut {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(32px); }
+}
+.animate-slideLeftIn { animation: slideLeftIn 0.4s both; }
+.animate-slideLeftOut { animation: slideLeftOut 0.4s both; }
+.animate-slideRightIn { animation: slideRightIn 0.4s both; }
+.animate-slideRightOut { animation: slideRightOut 0.4s both; }
+
 

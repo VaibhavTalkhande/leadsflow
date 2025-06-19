@@ -10,6 +10,7 @@ import ribbon from './assets/ribbon_Vector-p-2600.png'
 import Services from './components/Services'
 import Expertise from './components/Expertise'
 import Work from './components/Work'
+import Reviews from './components/Reviews'
 
 function App() {
   return (
@@ -39,37 +40,7 @@ function App() {
       {/* Our Work Section */}
       <Work/>
       {/* Words From Our Clients Section */}
-      <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">Words From Our Clients</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Top coding platform, GFG, is with us!</h3>
-              <p className="text-sm md:text-gray-400 mb-2 md:mb-4">BrandFlow has consistently delivered exceptional content on our main YouTube channel, covering trending topics with engaging edits and thumbnails.</p>
-              <p className="text-base md:text-lg font-semibold">GFG</p>
-              <p className="text-sm md:text-gray-500">Edtech</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Sahil from Canada went viral from scratch!</h3>
-              <p className="text-sm md:text-gray-400 mb-2 md:mb-4">I couldn't believe it when my first reel got 2 million views and my followers jumped from 500 to 50,000 in just a month. BrandFlow's services are top-notch.</p>
-              <p className="text-base md:text-lg font-semibold">Sahil Gogna</p>
-              <p className="text-sm md:text-gray-500">Lifestyle</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Uttrakhand's best JEE institute, Spectrum, believes in us!</h3>
-              <p className="text-sm md:text-gray-400 mb-2 md:mb-4">Through creative storytelling and thorough research, BrandFlow effectively communicates our vision to the target audience, especially the youth.</p>
-              <p className="text-base md:text-lg font-semibold">Spectrum</p>
-              <p className="text-sm md:text-gray-500">Edtech</p>
-            </div>
-            <div className="p-6 md:p-8 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg text-left">
-              <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4">Top fitness influencer, Hypertroph, likes our content strategy!</h3>
-              <p className="text-sm md:text-gray-400 mb-2 md:mb-4">BrandFlow really helped me to boost my performance through compelling edits, catchy ideas and strategic management.</p>
-              <p className="text-base md:text-lg font-semibold">Hypertroph</p>
-              <p className="text-sm md:text-gray-500">Fitness</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Reviews/>
 
       {/* About Team Section */}
       <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
