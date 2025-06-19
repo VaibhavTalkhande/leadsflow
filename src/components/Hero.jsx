@@ -5,6 +5,7 @@ import arrow from '../assets/arrow.png'
 import CountUp from 'react-countup'
 import { FaUsers, FaEye } from 'react-icons/fa'
 import { useInView } from 'react-intersection-observer';
+import AnimatedTitle from './Animated'
 
 const navLinks = [
   { label: 'Our Services', href: '#services' },
@@ -105,9 +106,12 @@ const Hero = () => {
               alt="Background" className="w-full h-full object-cover opacity-40" />
           </div>
           <div className="relative z-10 p-4 text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 animate-fadeInUp text-white">
-              LeadsFlow Media
-            </h1>
+            <AnimatedTitle>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 animate-fadeInUp text-white">
+                LeadsFlow Media
+              </h1>
+
+            </AnimatedTitle>
             <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white animate-fadeInUp animate-delay-100">
               Your Vision Our Videos,<br /><span className="text-green-500">Endless Leads.</span>
             </p>
@@ -115,13 +119,15 @@ const Hero = () => {
         </div>
         <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black to-transparent"></div>
         <div className="w-full py-10 md:py-20">
+            <AnimatedTitle>
+
           <div className='flex flex-col items-center justify-center text-center'>
             <img src={Sublogo} alt="Sublogo" className="w-32 sm:w-40 md:w-48 mb-4 animate-fadeInUp" />
             <p className="text-lg sm:text-xl md:text-2xl text-white animate-fadeInUp animate-delay-200">
-
               We are a leading video marketing agency, specializing in creating high-quality videos that drive results.
             </p>
         </div>
+            </AnimatedTitle>
           {/* stats section */}
           <div className="w-full mt-0 py-6 sm:py-8 flex justify-center items-center">
             <div
