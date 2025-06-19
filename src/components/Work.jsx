@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ribbon from '../assets/ribbon_Vector-p-2600.png'
+import AnimatedTitle from './Animated';
 const reels = [{
   src: 'https://www.youtube.com/embed/JUEdUm_pTuo',
 },{
@@ -68,7 +69,9 @@ const Work = () => {
     <section className="relative w-full py-16 bg-black" id="work">
       <img src={ribbon} alt="Ribbon" className="absolute -z-0 top-0 left-0 w-full h-auto object-fit opacity-20 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926]">Our Work</h2>
+        <AnimatedTitle>
+          <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center text-[#53c926]">Our Work Speaks for Itself</h2>
+        </AnimatedTitle>
         <div className="relative max-w-7xl mx-auto">
           <div className="overflow-hidden">
             <div

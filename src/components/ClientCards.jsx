@@ -1,5 +1,6 @@
 import React from 'react';
 import ribbon from "../assets/ribbon_Vector-p-2600.png"
+import AnimatedTitle from './Animated';
 const clients = [
   {
     name: 'CA Shubham Patel',
@@ -33,7 +34,9 @@ const ClientCards = () => {
     <section className="w-full py-10 md:py-16 bg-black relative overflow-hidden">
           <img src={ribbon} alt="Ribbon" className="absolute -z-0 top-0 left-0 w-full h-auto object-fit opacity-20 pointer-events-none" />
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#53c926] mb-8 text-center animate-fadeInUp">Top Clients We Have Served</h2>
+        <AnimatedTitle>
+          <h2 className="text-7xl md:text-3xl font-extrabold text-[#53c926] mb-8 text-center animate-fadeInUp">Top Clients We Have Served</h2>
+        </AnimatedTitle>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
           {clients.map((client, idx) => (
             <div

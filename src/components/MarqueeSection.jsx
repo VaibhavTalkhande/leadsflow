@@ -1,6 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import CountryFlag from 'react-country-flag';
+import AnimatedTitle from './Animated';
 
 const countries = [
   { name: 'USA', code: 'US' },
@@ -20,11 +21,14 @@ const MarqueeSection = () => {
       className="w-full py-8 md:py-12 bg-black relative overflow-hidden"
 
     >
-      <div className="max-w-5xl mx-auto px-4 w-1/2 inline">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white text-center mb-6 animate-fadeInUp drop-shadow-lg">
-          <span className="text-[#53c926]">We're available in</span> these countries
-        </h2>
-      </div>
+      <AnimatedTitle>
+        <div className="max-w-5xl mx-auto px-4 w-1/2 inline">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white text-center mb-6 animate-fadeInUp drop-shadow-lg">
+            <span className="text-[#53c926]">We're available in</span> these countries
+          </h2>
+        </div>
+
+      </AnimatedTitle>
       <Marquee className='bg-black' gradient={false} speed={40} pauseOnHover>
         {[...countries, ...countries].map((country, index) => (
           <div

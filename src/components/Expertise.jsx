@@ -1,4 +1,5 @@
 import React from 'react'
+import AnimatedTitle from './Animated'
 
 const expertise = [
   {
@@ -37,7 +38,10 @@ const Expertise = () => {
   return (
     <section className="w-full py-16 bg-black" id="expertise">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926] ">Our Expertise</h2>
+        <AnimatedTitle>
+          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926] ">Our Expertise</h2>
+        </AnimatedTitle>
+        <AnimatedTitle>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-stretch">
           {expertise.map((item, idx) => (
             <div key={idx} className="bg-black border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] p-0 flex flex-col min-h-[340px] overflow-hidden transition-transform hover:scale-[1.025]">
@@ -50,6 +54,8 @@ const Expertise = () => {
             </div>
           ))}
         </div>
+
+        </AnimatedTitle>
       </div>
     </section>
   )

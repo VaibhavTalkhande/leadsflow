@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaCheckCircle, FaTimesCircle, FaRocket } from 'react-icons/fa'
+import AnimatedTitle from './Animated'
 
 const problems = [
   "You're posting content but getting no real engagement or clients",
@@ -19,9 +20,11 @@ const Infosection = () => {
     <div className='relative w-full py-16 px-2 sm:px-4 md:px-12 bg-black text-white overflow-hidden'>
         
       <div className="container mx-auto px-2 sm:px-4 md:px-8 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-[#53c926] drop-shadow break-words leading-tight text-center">
-          Making Your Life Easier
-        </h2>
+        <AnimatedTitle>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-[#53c926] drop-shadow break-words leading-tight text-center">
+            Making Your Life Easier
+          </h2>
+        </AnimatedTitle>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 max-w-6xl mx-auto justify-center items-stretch">
           {/* Problems Card */}
           <div className="bg-black border-4 border-white rounded-lg shadow-[8px_8px_0_0_#ff234b] p-5 sm:p-8 md:p-10 flex flex-col items-start md:items-center relative animate-fadeInUp max-w-xl w-full mx-auto font-bold min-h-[340px]">

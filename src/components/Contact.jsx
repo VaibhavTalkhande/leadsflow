@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaRegCopy, FaCheck, FaArrowRight, FaComments } from 'react-icons/fa';
+import AnimatedTitle from './Animated';
 
 const contactInfo = [
   {
@@ -43,16 +44,19 @@ const Contact = () => {
   return (
     <section className="w-full py-10 sm:py-14 md:py-20 bg-black flex flex-col items-center relative overflow-hidden font-sans" id="contact">
       <FloatingDots />
+      <AnimatedTitle>
       <div className="relative z-10 w-full flex flex-col items-center px-2 sm:px-4 md:px-0">
         <div className="flex items-center gap-2 sm:gap-3 mb-3">
           <FaComments className="w-7 h-7 sm:w-8 sm:h-8 text-[#53c926] drop-shadow-lg animate-bounce-slow" />
           <h2 className="text-xl sm:text-3xl md:text-5xl font-bold text-center text-[#53c926] drop-shadow-lg tracking-tight">Let's Connect!</h2>
         </div>
+      
         <p className="text-white text-base sm:text-lg md:text-2xl mb-6 sm:mb-8 text-center max-w-2xl font-light">Ready to grow your brand with powerful video marketing? Reach out now and let's make something amazing together.</p>
+          
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-10 justify-center items-center w-full max-w-3xl mb-8">
           {contactInfo.map((info) => (
             <div
-              key={info.type}
+            key={info.type}
               className="relative group bg-white/10 backdrop-blur-md border-2 border-transparent rounded-2xl p-[2px] transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl min-h-[180px] sm:min-h-[200px] w-full max-w-xs sm:max-w-sm md:max-w-md z-10 mb-4 sm:mb-0"
               style={{ boxShadow: '0 4px 32px 0 rgba(83,201,38,0.10)' }}
             >
@@ -91,7 +95,9 @@ const Contact = () => {
             </div>
           ))}
         </div>
+
       </div>
+      </AnimatedTitle>
       {/* Custom keyframes for bounce and pulse-x */}
       <style>{`
         @keyframes bounce-slow { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
