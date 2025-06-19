@@ -33,7 +33,7 @@ const Services = () => {
   return (
     <section className="w-full py-16 bg-black" id="services">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">Our Services</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926]">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
           {services.map((service, idx) => (
             <div

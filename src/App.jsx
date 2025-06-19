@@ -8,6 +8,7 @@ import MarqueeSection from './components/MarqueeSection'
 import Infosection from './components/Infosection'
 import ribbon from './assets/ribbon_Vector-p-2600.png'
 import Services from './components/Services'
+import Expertise from './components/Expertise'
 
 function App() {
   return (
@@ -32,37 +33,7 @@ function App() {
       </div>
 
       {/* Our Expertise Section */}
-      <section className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">
-        <div className="container mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 md:mb-12">Our Expertise</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Strategy</h3>
-              <p className="text-sm md:text-gray-400">Strategic guidance and competitive analysis to grow brand identity.</p>
-            </div>
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Content Research</h3>
-              <p className="text-sm md:text-gray-400">Detailed value addition content that connects and sparks action.</p>
-            </div>
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Storytelling</h3>
-              <p className="text-sm md:text-gray-400">Connect emotionally with your audience through storytelling.</p>
-            </div>
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Video Production</h3>
-              <p className="text-sm md:text-gray-400">From concept to creation, we bring your vision to life. on screen.</p>
-            </div>
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Video Editing</h3>
-              <p className="text-sm md:text-gray-400">Turn your raw footages into captivating videos that tell stories.</p>
-            </div>
-            <div className="p-6 bg-black border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-lg">
-              <h3 className="text-xl md:text-2xl font-semibold mb-2">Graphic Design</h3>
-              <p className="text-sm md:text-gray-400">Turn ideas into stunning carousels, thumbnails and posters.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Expertise/>
 
       {/* Our Work Section */}
       <section id="work" className="py-16 md:py-20 bg-[#00181c] border-4 border-white shadow-[-8px_8px_0px_0px_#53c926] rounded-xl mx-2 md:mx-8 my-8">

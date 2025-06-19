@@ -38,7 +38,7 @@ const ClientCards = () => {
           {clients.map((client, idx) => (
             <div
               key={idx}
-              className=" border-4 border-[#00181c] rounded-lg shadow-[-8px_8px_0px_0px_#53c926] flex flex-col items-center justify-center p-6 sm:p-8 min-h-[240px] w-full max-w-xs mx-auto hover:scale-105 transition-transform duration-300 animate-popUp"
+              className=" border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] flex flex-col items-center justify-center p-6 sm:p-8 min-h-[240px] w-full max-w-xs mx-auto hover:scale-105 transition-transform duration-300 animate-popUp"
               style={{ boxShadow: '-8px 8px 0px 0px #53c926' }}
             >
               <img
