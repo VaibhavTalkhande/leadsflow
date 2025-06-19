@@ -35,7 +35,7 @@ const ClientCards = () => {
           <img src={ribbon} alt="Ribbon" className="absolute -z-0 top-0 left-0 w-full h-auto object-fit opacity-20 pointer-events-none" />
       <div className="max-w-5xl mx-auto px-4">
         <AnimatedTitle>
-          <h2 className="text-7xl md:text-3xl font-extrabold text-[#53c926] mb-8 text-center animate-fadeInUp">Top Clients We Have Served</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-[#53c926] mb-8 text-center animate-fadeInUp">Top Clients We Have Served</h2>
         </AnimatedTitle>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
           {clients.map((client, idx) => (
