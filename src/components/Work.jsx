@@ -76,7 +76,7 @@ const Work = () => {
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                <div key={slideIndex} className="w-full flex-shrink-0 px-2">
+                <div key={slideIndex} className="w-full flex-shrink-0 px-2 py-2">
                   <div className="grid grid-cols-1 sm:grid-cols-2 px-10 lg:grid-cols-3 gap-6">
                     {reels
                       .slice(

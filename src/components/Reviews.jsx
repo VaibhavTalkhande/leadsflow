@@ -79,12 +79,12 @@ const Reviews = () => {
     <section className="w-full py-8 sm:py-12 md:py-16 bg-black relative overflow-hidden flex flex-col justify-center" id="reviews">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 flex flex-col justify-center h-full">
         <h2 className="text-xl sm:text-3xl md:text-5xl font-bold mb-4 sm:mb-8 md:mb-10 text-center text-[#53c926]">Words from Our Clients</h2>
-        <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-auto">
+        <div className="relative max-w-7xl mx-auto flex flex-col justify-center h-auto px-8 sm:px-12 md:px-20">
           <div className="relative flex items-center justify-center h-auto min-h-[260px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[420px]">
             {/* Left Button */}
             <button
               onClick={prevSlide}
-              className="absolute left-1 sm:left-2 md:left-4 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
+              className="absolute -left-10 sm:-left-6 md:-left-10 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
             >
               <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -96,7 +96,7 @@ const Reviews = () => {
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
               >
                 {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                  <div key={slideIndex} className="w-full flex-shrink-0 px-1 sm:px-2 md:px-4">
+                  <div key={slideIndex} className="w-full py-2 flex-shrink-0 px-1 sm:px-2 md:px-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-stretch">
                       {reviews
                         .slice(
@@ -121,7 +121,7 @@ const Reviews = () => {
             {/* Right Button */}
             <button
               onClick={nextSlide}
-              className="absolute right-1 sm:right-2 md:right-4 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
+              className="absolute -right-10 sm:-right-6 md:-right-10 top-1/2 -translate-y-1/2 bg-[#53c926] text-black p-2 sm:p-2.5 rounded-full shadow-lg border-2 border-white hover:bg-green-700 hover:text-white transition-colors duration-300 z-10"
             >
               <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
