@@ -1,12 +1,13 @@
 import React from 'react'
-import Sublogo from '../assets/Asset 6.png'
-
+import Sublogo from '../assets/leadsflowmedialogo.png'
+import arrow from '../assets/arrow.png'
+import ribbon from '../assets/ribbon_Vector-p-2600.png'
 const About = () => {
   return (
     <div className="relative w-full py-20 px-4 md:px-12 bg-[#000] text-white overflow-hidden">
       <div className="absolute inset-0">
-        <img src="https://cdn.prod.website-files.com/65ee85d8d9a1a95a5fb24c11/65ee98c6675af0c080af1fbb_Asset%208%201-p-1600.png"
-          alt="Background" className="w-full h-full object-cover opacity-10" />
+        <img src={ribbon}
+          alt="Background" className="w-full h-full object-cover opacity-20" />
       </div>
       <div className="container mx-auto flex flex-col md:flex-row items-center md:items-start justify-between gap-12 relative z-10">
         {/* Left side: Title and Image */}
