@@ -16,7 +16,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 function App() {
   return (
-    <div className="min-h-screen bg-[#00181c] text-white font-sans">
+    <div className="min-h-screen bg-black text-white font-sans">
       {/* Hero Section */}
 
       <Hero />
