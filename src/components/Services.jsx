@@ -27,7 +27,7 @@ const services = [
     icon: <MdSupportAgent className="text-5xl md:text-6xl text-[#53c926] drop-shadow" />, // Consultation
     pill: 'Consultation',
     title: <>Consultation by <span className="text-[#53c926] font-extrabold italic">Founder & Team</span></>,
-    desc: "We've spent years growing multiple brands from scratch to communities of over 5M+ in total. We know how to make your content stand out and go viral. Want us to guide your in-house team to 2x your growth? Looking to build a strong personal brand?",
+    desc: "We've spent years growing multiple brands from scratch. We know how to make your content stand out and go viral. Want us to guide your in-house team to 2x your growth? Looking to build a strong personal brand?",
   }
 ]
 
