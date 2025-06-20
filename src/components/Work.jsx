@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ribbon from '../assets/ribbon_Vector-p-2600.png'
 import AnimatedTitle from './Animated';
+import WorkCard from './WorkCard';
 const reels = [{
   src: 'https://www.youtube.com/embed/JUEdUm_pTuo',
 },{
@@ -87,20 +88,7 @@ const Work = () => {
                         (slideIndex + 1) * cardsPerView
                       )
                       .map((reel, idx) => (
-                        <div key={idx} className="bg-black border-4  border-white rounded-xl shadow-[-6px_6px_0px_0px_#53c926] overflow-hidden flex flex-col items-center min-w-[200px] max-w-[90vw] sm:min-w-[320px] sm:max-w-xs w-full transition-all duration-500" style={{ transitionTimingFunction: 'cubic-bezier(.4,2,.6,1)' }}>
-                          <iframe
-                            width="180"
-                            height="320"
-                            src={reel.src}
-                            title={`Reel ${slideIndex * cardsPerView + idx + 1}`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                            allowFullScreen
-                            className="w-full h-[56vw] max-h-[400px] min-h-[200px] sm:h-[56vw] sm:max-h-[566px] sm:min-h-[320px] bg-black"
-                            style={{ aspectRatio: '9/16' }}
-                          ></iframe>
-                        </div>
+                        <WorkCard key={idx} src={reel.src} />
                       ))}
                   </div>
                 </div>

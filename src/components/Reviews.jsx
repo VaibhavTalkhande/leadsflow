@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import AnimatedTitle from './Animated';
+import ReviewCard from './ReviewCard';
 
 const reviews = [
   {
@@ -118,14 +119,7 @@ const Reviews = () => {
                           (slideIndex + 1) * cardsPerView
                         )
                         .map((review, idx) => (
-                          <div key={idx} className="bg-black border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] p-3 sm:p-6 md:p-8 flex flex-col items-center text-center min-h-[220px] sm:min-h-[280px] md:min-h-[340px] h-[220px] sm:h-[280px] md:h-[340px] max-w-full transition-all duration-500 justify-between">
-                            <svg className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 mb-2 sm:mb-3 md:mb-4 text-[#53c926]" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 8A5.001 5.001 0 0 1 12 3v2a3 3 0 0 0-3 3c0 1.31.84 2.42 2.03 2.83A3.001 3.001 0 0 1 15 15v2a5.001 5.001 0 0 1-4.83-7H7.17z"/></svg>
-                            <p className="text-xs sm:text-base md:text-lg text-white font-medium mb-2 sm:mb-4 md:mb-6 break-words whitespace-pre-line flex-1">{review.text}</p>
-                            <div className="mt-auto pt-1 sm:pt-2">
-                              <div className="text-[#53c926] font-bold text-xs sm:text-base md:text-lg">{review.name}</div>
-                              <div className="text-gray-300 text-[10px] sm:text-xs md:text-sm lg:text-base">{review.title}</div>
-                            </div>
-                          </div>
+                          <ReviewCard key={idx} name={review.name} title={review.title} text={review.text} />
                         ))}
                     </div>
                   </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import AnimatedTitle from './Animated'
+import ExpertiseCard from './ExpertiseCard'
 
 const expertise = [
   {
@@ -44,17 +45,9 @@ const Expertise = () => {
         <AnimatedTitle>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-stretch">
           {expertise.map((item, idx) => (
-            <div key={idx} className="bg-black border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] p-0 flex flex-col min-h-[340px] overflow-hidden transition-transform hover:scale-[1.025]">
-              <img src={item.img} alt={item.title} className="w-full h-40 object-cover object-center border-b-2 border-[#53c926]" loading="lazy" />
-              <div className="p-6 flex flex-col flex-1">
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#53c926]">{item.title}</h3>
-                <hr className="my-2 border-gray-700" />
-                <p className="text-base md:text-lg text-gray-200 font-medium break-words whitespace-pre-line w-full">{item.desc}</p>
-              </div>
-            </div>
+            <ExpertiseCard key={idx} img={item.img} title={item.title} desc={item.desc} />
           ))}
         </div>
-
         </AnimatedTitle>
       </div>
     </section>

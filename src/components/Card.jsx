@@ -21,9 +21,9 @@ const Card = ({ name, title, image }) => {
 
 const StyledWrapper = styled.div`
   .card {
-    --card-bg: #ffffff;
-    --card-accent: #7c3aed;
-    --card-text: #1e293b;
+    --card-bg: #111;
+    --card-accent: #53c926;
+    --card-text: #ffffff;
     --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 
     width: 300px;
@@ -45,11 +45,13 @@ const StyledWrapper = styled.div`
     background: linear-gradient(
       120deg,
       rgba(255, 255, 255, 0) 40%,
-      rgba(255, 255, 255, 0.8) 50%,
+      rgba(83, 201, 38, 0.10) 50%,
       rgba(255, 255, 255, 0) 90%
     );
     opacity: 0;
     transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
   }
 
   .card__glow {
@@ -57,11 +59,13 @@ const StyledWrapper = styled.div`
     inset: -10px;
     background: radial-gradient(
       circle at 50% 0%,
-      rgba(124, 58, 237, 0.3) 0%,
-      rgba(124, 58, 237, 0) 100%
+      rgba(46, 125, 50, 0.22) 0%,
+      rgba(46, 125, 50, 0) 100%
     );
     opacity: 0;
     transition: opacity 0.5s ease;
+    z-index: 1;
+    pointer-events: none;
   }
 
   .card__content {
@@ -78,7 +82,7 @@ const StyledWrapper = styled.div`
     width: 100%;
     height: 60%;
     background: linear-gradient(45deg, #a78bfa, #8b5cf6);
-    border-radius: 12px;
+    border-radius: 0.5rem;
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     overflow: hidden;
@@ -137,6 +141,7 @@ const StyledWrapper = styled.div`
     font-weight: 700;
     font-size: 1em;
     transition: all 0.3s ease;
+
   }
 
   .card__button {
@@ -163,12 +168,12 @@ const StyledWrapper = styled.div`
   }
 
   .card:hover .card__shine {
-    opacity: 1;
+    opacity: 0.7;
     animation: shine 3s infinite;
   }
 
   .card:hover .card__glow {
-    opacity: 1;
+    opacity: 0.7;
   }
 
   .card:hover .card__image {
