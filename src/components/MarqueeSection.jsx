@@ -42,7 +42,7 @@ const MarqueeSection = () => {
               style={{ width: '2.5em', height: '2.5em', borderRadius: '0.4em', boxShadow: '0 2px 8px #00181c33' }}
               aria-label={country.name}
             />
-            <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-black tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>{country.name}</span>
+            <span className="text-md font-extrabold text-black tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>{country.name}</span>
           </div>
         ))}
       </Marquee>
