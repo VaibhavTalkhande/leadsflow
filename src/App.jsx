@@ -16,7 +16,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-sans">
+    <div className="min-h-screen bg-[#00181c] text-white font-sans">
       {/* Hero Section */}
 
       <Hero />
@@ -28,7 +28,7 @@ function App() {
       <About />
       
       {/* Making Your Life Easier Section */}
-      <div className="relative w-full py-16 px-4 md:px-12  text-white overflow-hidden">
+      <div className="relative w-full py-16 px-4 md:px-12 text-white overflow-hidden">
         <img src={ribbon} alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
        <Infosection/>
       {/* Our Services Section */}
