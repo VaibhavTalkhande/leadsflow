@@ -1,6 +1,7 @@
 import React from 'react';
 import ribbon from "../assets/ribbon_Vector-p-2600.png"
 import AnimatedTitle from './Animated';
+import Card from './Card.jsx'
 const clients = [
   {
     name: 'CA Shubham Patel',
@@ -39,20 +40,12 @@ const ClientCards = () => {
         </AnimatedTitle>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-items-center">
           {clients.map((client, idx) => (
-            <div
+            <Card
               key={idx}
-              className=" border-4 border-white rounded-lg shadow-[-8px_8px_0px_0px_#53c926] flex flex-col items-center justify-center p-6 sm:p-8 min-h-[240px] w-full max-w-xs mx-auto hover:scale-105 transition-transform duration-300 animate-popUp"
-              style={{ boxShadow: '-8px 8px 0px 0px #53c926' }}
-            >
-              <img
-                src={client.image}
-                alt={client.name}
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-full mb-4 object-cover border-4 border-black shadow"
-                loading="lazy"
-              />
-              <div className="text-lg sm:text-xl font-bold text-white mb-1 text-center leading-tight">{client.name}</div>
-              <div className="text-xs sm:text-sm md:text-base text-gray-300 text-center leading-snug font-semibold">{client.title}</div>
-            </div>
+              name={client.name}
+              title={client.title}
+              image={client.image}
+            />
           ))}
         </div>
       </div>
