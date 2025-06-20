@@ -86,7 +86,7 @@ const Hero = () => {
         <ul className="hidden md:flex flex-row items-center space-x-8 text-xl font-semibold">
           {navLinks.map(link => link.isButton ? (
             <li key={link.label}>
-              <a href={link.href} className="px-6 py-2 bg-[#53c926] text-black border-2 border-white shadow-[4px_4px_0px_0px_#53c926] rounded-md hover:bg-green-700 transition duration-300">{link.label}</a>
+              <a href={link.href} className="px-6 py-2 bg-[#53c926] text-black  rounded-4xl hover:bg-green-700 transition duration-300">{link.label}</a>
             </li>
           ) : (
             <li key={link.label}>

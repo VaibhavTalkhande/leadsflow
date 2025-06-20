@@ -4,7 +4,7 @@ import arrow from '../assets/arrow.png'
 import ribbon from '../assets/ribbon_Vector-p-2600.png'
 const About = () => {
   return (
-    <div className="relative w-full py-20 px-4 md:px-12 bg-[#000] text-white overflow-hidden">
+    <div className="relative w-full py-20 px-4 md:px-12  text-white overflow-hidden">
       <div className="absolute inset-0">
         <img src={ribbon}
           alt="Background" className="w-full h-full object-cover opacity-20" />

@@ -17,7 +17,7 @@ const solutions = [
 
 const Infosection = () => {
   return (
-    <div className='relative w-full py-16 px-2 sm:px-4 md:px-12 bg-black text-white overflow-hidden'>
+    <div className='relative w-full py-16 px-2 sm:px-4 md:px-12  text-white overflow-hidden'>
         
       <div className="container mx-auto px-2 sm:px-4 md:px-8 text-center">
         <AnimatedTitle>

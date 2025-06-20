@@ -36,7 +36,7 @@ const expertise = [
 
 const Expertise = () => {
   return (
-    <section className="w-full py-16 bg-black" id="expertise">
+    <section className="w-full py-16 " id="expertise">
       <div className="max-w-7xl mx-auto px-4">
         <AnimatedTitle>
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926] ">Our Expertise</h2>

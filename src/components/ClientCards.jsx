@@ -31,7 +31,7 @@ const clients = [
 
 const ClientCards = () => {
   return (
-    <section className="w-full py-10 md:py-16 bg-black relative overflow-hidden">
+    <section className="w-full py-10 md:py-16 relative overflow-hidden">
           <img src={ribbon} alt="Ribbon" className="absolute -z-0 top-0 left-0 w-full h-auto object-fit opacity-20 pointer-events-none" />
       <div className="max-w-5xl mx-auto px-4">
         <AnimatedTitle>

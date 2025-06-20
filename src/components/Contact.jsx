@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full py-10 sm:py-14 md:py-20 bg-black flex flex-col items-center relative overflow-hidden font-sans" id="contact">
+    <section className="w-full py-10 sm:py-14 md:py-20  flex flex-col items-center relative overflow-hidden font-sans" id="contact">
       <FloatingDots />
       <AnimatedTitle>
       <div className="relative z-10 w-full flex flex-col items-center px-2 sm:px-4 md:px-0">

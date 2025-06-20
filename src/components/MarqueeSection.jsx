@@ -18,7 +18,7 @@ const countries = [
 const MarqueeSection = () => {
   return (
     <section
-      className="w-full py-8 md:py-12 bg-black relative overflow-hidden"
+      className="w-full py-8 md:py-12  relative overflow-hidden"
 
     >
       <AnimatedTitle>
@@ -29,7 +29,8 @@ const MarqueeSection = () => {
         </div>
 
       </AnimatedTitle>
-      <Marquee className='bg-black' gradient={false} speed={40} pauseOnHover>
+      <div className='w-[90%] sm:w-[80%] md:w-[80%] lg:w-[80%] xl:w-[80%] mx-auto mb-4 p-4 rounded-xl bg-white opacity-60 backdrop-blur-2xl shadow-lg'>
+      <Marquee gradient={false} speed={40} pauseOnHover>
         {[...countries, ...countries].map((country, index) => (
           <div
             key={index}
@@ -41,10 +42,11 @@ const MarqueeSection = () => {
               style={{ width: '2.5em', height: '2.5em', borderRadius: '0.4em', boxShadow: '0 2px 8px #00181c33' }}
               aria-label={country.name}
             />
-            <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>{country.name}</span>
+            <span className="text-xl sm:text-2xl md:text-3xl font-extrabold text-black tracking-wide uppercase" style={{letterSpacing: '0.05em'}}>{country.name}</span>
           </div>
         ))}
       </Marquee>
+      </div>
     </section>
   );
 };

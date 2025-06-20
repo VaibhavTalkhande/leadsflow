@@ -32,7 +32,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="w-full py-16 bg-black" id="services">
+    <section className="w-full py-16 " id="services">
       <div className="max-w-6xl mx-auto px-4">
         <AnimatedTitle>
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926]">Our Services</h2>

@@ -66,7 +66,7 @@ const Work = () => {
   const totalSlides = Math.ceil(reels.length / cardsPerView);
 
   return (
-    <section className="relative w-full py-16 bg-black" id="work">
+    <section className="relative w-full py-16 " id="work">
       <img src={ribbon} alt="Ribbon" className="absolute -z-0 top-0 left-0 w-full h-auto object-fit opacity-20 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4">
         <AnimatedTitle>
