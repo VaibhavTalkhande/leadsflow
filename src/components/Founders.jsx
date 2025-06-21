@@ -2,18 +2,20 @@ import React from 'react';
 import ribbon from '../assets/ribbon_Vector-p-2600.png';
 import AnimatedTitle from './Animated';
 import FounderCard from './FounderCard';
+import pratik from '../assets/pratikpatel.JPG';
+import dhruvi from '../assets/IMG_4117.JPG';
 const founders = [
   {
     name: 'Mr. Pratik Patel',
     position: 'Co-Founder',
-    image: 'https://via.placeholder.com/200x200?text=Pratik', // Replace with real image if available
-    linkedin: 'https://www.linkedin.com/in/pratikpatel', // Replace with real URL
+    image: pratik, // Replace with real image if available
+    linkedin: 'https://www.linkedin.com/in/pratik-patel-d21/', // Replace with real URL
   },
   {
     name: 'Ms. Dhruvi Patel',
     position: 'Co-Founder',
-    image: 'https://via.placeholder.com/200x200?text=Dhruvi', // Replace with real image if available
-    linkedin: 'https://www.linkedin.com/in/dhruvipatel', // Replace with real URL
+    image: dhruvi, // Replace with real image if available
+    linkedin: 'https://www.linkedin.com/in/pratik-patel-d21/', // Replace with real URL
   },
 ];
 

@@ -2,32 +2,43 @@ import React from 'react';
 import ribbon from "../assets/ribbon_Vector-p-2600.png"
 import AnimatedTitle from './Animated';
 import Card from './Card.jsx'
+import conso from '../assets/conso.png';
+import ark from '../assets/ark.png';
+import dental from '../assets/dental.png';
+import blissfull from '../assets/blissfull.png';
+import quickfintax from '../assets/quickfintax.png';
+import karma from '../assets/karma.png';
 const clients = [
   {
     name: 'CA Shubham Patel',
     title: 'Founder and CEO Conso AI',
-    image: 'https://ui-avatars.com/api/?name=CA+Shubham+Patel&background=53c926&color=fff&size=128',
+    image: conso,
   },
   {
     name: 'Rohit Purohit',
     title: 'Managing Director ARK2Construct',
-    image: 'https://ui-avatars.com/api/?name=Rohit+Purohit&background=53c926&color=fff&size=128',
+    image: ark,
   },
   {
     name: 'Dr. Ankita Agrawal',
     title: 'Co Founder Agrawal Dental Clinic',
-    image: 'https://ui-avatars.com/api/?name=Dr+Ankita+Agrawal&background=53c926&color=fff&size=128',
+    image: dental,
   },
   {
     name: 'Dr. Vrutika Patel',
     title: 'Founder Blissful hands',
-    image: 'https://ui-avatars.com/api/?name=Dr+Vrutika+Patel&background=53c926&color=fff&size=128',
+    image: blissfull,
   },
   {
     name: 'CA CS Harshwardhan Bissa',
     title: 'Co-founder - Quick Fintax',
-    image: 'https://ui-avatars.com/api/?name=Harshwardhan+Bissa&background=53c926&color=fff&size=128',
+    image: quickfintax,
   },
+  {
+    name: 'CA Pratik Patel',
+    title: 'Co-founder - Quick Fintax',
+    image: karma
+  }
 ];
 
 const ClientCards = () => {
