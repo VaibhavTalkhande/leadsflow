@@ -55,11 +55,11 @@ const Contact = () => {
         Leads stuck? Let them flow — with Leads Flow Media.
         </p>
           
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-10 justify-center items-center w-full max-w-3xl mb-8">
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-10 justify-center items-stretch w-full max-w-3xl mt-10 mb-8">
           {contactInfo.map((info) => (
             <div
             key={info.type}
-              className="relative group bg-white/10 backdrop-blur-md border-2 border-transparent rounded-2xl p-[2px] transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl min-h-[180px] sm:min-h-[200px] w-full max-w-xs sm:max-w-sm md:max-w-md z-10 mb-4 sm:mb-0"
+              className="relative group bg-white/10 backdrop-blur-md border-2 border-transparent rounded-2xl p-[2px] transition-transform duration-300 hover:scale-[1.03] hover:shadow-2xl min-h-[180px] sm:min-h-[200px] w-full min-w-[340px] flex-1 z-10 mb-4 sm:mb-0"
               style={{ boxShadow: '0 4px 32px 0 rgba(83,201,38,0.10)' }}
             >
               <div className="bg-black/80 rounded-2xl p-5 sm:p-7 flex flex-col items-center text-center h-full">
