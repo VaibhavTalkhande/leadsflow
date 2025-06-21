@@ -50,11 +50,11 @@ const Hero = () => {
         background: 'radial-gradient(circle at center, #00181c 0%,#000 100%)'
       }}>
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-4 md:px-12 items-center relative  pb-4 mb-4">
-        <div className="flex items-center justify-between w-full md:w-auto">
+        <div className="flex items-center w-full lg:w-auto justify-between lg:justify-start gap-4">
           <img src={LeadsflowMediaLogo} alt="Leadsflow Media Logo" className="h-16 md:h-20" />
           <button
             onClick={toggleMenu}
-            className="md:hidden text-white focus:outline-none z-50"
+            className="lg:hidden text-white focus:outline-none z-50"
             aria-label="Toggle menu"
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`fixed inset-0 bg-black bg-opacity-95 z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+        <div className={`fixed inset-0 bg-black bg-opacity-95 z-40 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden`}>
           <ul className="flex flex-col items-center justify-center h-full space-y-8">
             {navLinks.map(link => link.isButton ? (
               <li key={link.label}>
@@ -83,7 +83,7 @@ const Hero = () => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex flex-row items-center space-x-8 text-xl font-semibold">
+        <ul className="hidden lg:flex flex-row items-center space-x-8 text-xl font-semibold">
           {navLinks.map(link => link.isButton ? (
             <li key={link.label}>
               <a href={link.href} className="px-6 py-2 bg-[#53c926] text-black  rounded-4xl hover:bg-green-700 transition duration-300">{link.label}</a>
@@ -96,11 +96,11 @@ const Hero = () => {
         </ul>
       </div>
 
-      <div className="flex-1 w-full items-center justify-center bg-cover bg-center pt-16"
+      <div className="flex-1 w-full items-center justify-center bg-cover bg-center "
         style={{
           background: 'radial-gradient(circle at center, #00181c 0%,#000 100%)'
         }}>
-        <div className="relative w-full sm:h-screen md:h-[calc(100vh-80px)] flex flex-col items-center justify-center overflow-hidden">
+        <div className="relative  w-full h-fit pt-10 sm:h-screen md:h-[calc(100vh-80px)] flex flex-col items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={arrow}
               alt="Background" className="w-full h-full object-cover opacity-40" />
