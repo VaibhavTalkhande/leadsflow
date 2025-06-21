@@ -13,8 +13,6 @@ const reels = [{
 {
     src: 'https://www.youtube.com/embed/8jzZI49KfKo',
 },{
-    src: 'https://www.youtube.com/embed/vPvv9GMEpJI',
-},{
     src: 'https://www.youtube.com/embed/Z6eYzn5ADg4',
 },{
     src: 'https://www.youtube.com/embed/XaL4uijU3q4',
@@ -39,16 +37,6 @@ const Work = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        const nextIndex = prevIndex + 1;
-        return nextIndex >= Math.ceil(reels.length / cardsPerView) ? 0 : nextIndex;
-      });
-    }, 10000);
-    return () => clearInterval(timer);
-  }, [cardsPerView]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {

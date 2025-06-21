@@ -35,8 +35,8 @@ const clients = [
     image: quickfintax,
   },
   {
-    name: 'CA Pratik Patel',
-    title: 'Co-founder - Quick Fintax',
+    name: 'Dr Shalini Deshmukh',
+    title: 'Managing Director Karma Astrology',
     image: karma
   }
 ];

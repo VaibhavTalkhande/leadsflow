@@ -29,7 +29,7 @@ const MarqueeSection = () => {
         </div>
 
       </AnimatedTitle>
-      <div className='w-[90%] sm:w-[80%] md:w-[80%] lg:w-[80%] xl:w-[80%] mx-auto mb-4 p-4 rounded-xl bg-white opacity-60 backdrop-blur-2xl shadow-lg'>
+      <div className='w-[90%] sm:w-[80%] md:w-[80%] lg:w-[80%] xl:w-[80%] mx-auto mb-4 p-4 rounded-xl bg-white opacity-80 backdrop-blur-2xl shadow-lg'>
       <Marquee gradient={false} speed={40} pauseOnHover>
         {[...countries, ...countries].map((country, index) => (
           <div
