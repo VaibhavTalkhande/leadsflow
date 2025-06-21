@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedin } from 'react-icons/fa';
 
-const FounderCard = ({ image, name, position, linkedin }) => {
+const FounderCard = ({ image, name, position, linkedin,bio }) => {
   return (
     <StyledWrapper>
       <div className="card">
@@ -23,7 +23,7 @@ const FounderCard = ({ image, name, position, linkedin }) => {
           >
             <FaLinkedin className="linkedin-icon" />
           </a>
-          <div className="card__desc">LeadsFlow Media's visionaries, blending creativity and strategy to drive success.</div>
+          <div className="card__desc">{bio}</div>
         </div>
       </div>
     </StyledWrapper>

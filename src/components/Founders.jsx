@@ -10,12 +10,14 @@ const founders = [
     position: 'Co-Founder',
     image: pratik, // Replace with real image if available
     linkedin: 'https://www.linkedin.com/in/pratik-patel-d21/', // Replace with real URL
+    bio:'Leads Flow Media’s growth strategist, turning bold visions into content that converts',
   },
   {
     name: 'Ms. Dhruvi Patel',
     position: 'Co-Founder',
     image: dhruvi, // Replace with real image if available
     linkedin: 'https://www.linkedin.com/in/dhruvi-patel-17032b36b/', // Replace with real URL
+    bio: 'Creative mind behind the flow — shaping stories that speak, serve, and sell.'
   },
 ];
 
@@ -34,6 +36,7 @@ const Founders = () => (
             name={founder.name}
             position={founder.position}
             linkedin={founder.linkedin}
+            bio={founder.bio}
           />
         ))}
       </div>
