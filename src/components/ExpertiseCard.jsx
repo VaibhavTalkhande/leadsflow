@@ -158,10 +158,10 @@ const StyledWrapper = styled.div`
   }
   @media (max-width: 600px) {
     .card {
-      min-height: 140px;
+      min-height: 250px;
     }
     .card__image-wrapper {
-      height: 70px;
+      height: 150px;
     }
     .card__title {
       font-size: 1em;

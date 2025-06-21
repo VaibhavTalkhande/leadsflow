@@ -204,16 +204,16 @@ const StyledWrapper = styled.div`
   @media (max-width: 600px) {
     .card {
       min-height: 180px;
-      max-width: 98vw;
+      max-width: 90vw;
       padding: 0.8em 0.5em 0.5em 0.5em;
     }
     .card__avatar-wrapper {
-      width: 60px;
-      height: 60px;
+      width: 160px;
+      height: 160px;
     }
     .card__avatar {
-      width: 50px;
-      height: 50px;
+      width: 160px;
+      height: 160px;
     }
     .card__name {
       font-size: 1em;
