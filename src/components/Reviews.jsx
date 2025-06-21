@@ -38,7 +38,7 @@ const getCardsPerView = () => {
   return 1;
 }
 
-const AUTO_ADVANCE = 5000; // ms
+
 
 const Reviews = () => {
   const [cardsPerView, setCardsPerView] = useState(getCardsPerView());
@@ -52,17 +52,6 @@ const Reviews = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  useEffect(() => {
-    if (!isActive) return;
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => {
-        const nextIndex = prevIndex + 1;
-        return nextIndex >= Math.ceil(reviews.length / cardsPerView) ? 0 : nextIndex;
-      });
-    }, AUTO_ADVANCE);
-    return () => clearInterval(timer);
-  }, [cardsPerView, isActive]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {
