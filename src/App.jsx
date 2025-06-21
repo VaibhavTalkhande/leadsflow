@@ -27,13 +27,10 @@ function App() {
       {/* About BrandFlow Section */}
       <About />
       
-      {/* Making Your Life Easier Section */}
-      <div className="relative w-full py-16 px-4 md:px-12 text-white overflow-hidden">
-        <img src={ribbon} alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
+      {/* Making Your Life Easier Section */} 
        <Infosection/>
       {/* Our Services Section */}
         <Services/>
-      </div>
 
       {/* Our Expertise Section */}
       <Expertise/>

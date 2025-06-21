@@ -15,7 +15,7 @@ const founders = [
     name: 'Ms. Dhruvi Patel',
     position: 'Co-Founder',
     image: dhruvi, // Replace with real image if available
-    linkedin: 'https://www.linkedin.com/in/pratik-patel-d21/', // Replace with real URL
+    linkedin: 'https://www.linkedin.com/in/dhruvi-patel-17032b36b/', // Replace with real URL
   },
 ];
 

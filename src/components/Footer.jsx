@@ -13,7 +13,7 @@ const links = [
 ];
 
 const socials = [
-  { icon: <FaLinkedin />, href: 'https://www.linkedin.com/company/leadsflowmedia', label: 'LinkedIn' },
+  { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/pratik-patel-d21/', label: 'LinkedIn' },
   { icon: <FaEnvelope />, href: 'mailto:leadsflowmedia1@gmail.com', label: 'Email' },
   { icon: <FaPhoneAlt />, href: 'tel:+918390915155', label: 'Phone' },
 ];

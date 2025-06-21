@@ -51,7 +51,9 @@ const Contact = () => {
           <h2 className="text-xl sm:text-3xl md:text-5xl font-bold text-center text-[#53c926] drop-shadow-lg tracking-tight">Let's Connect!</h2>
         </div>
       
-        <p className="text-white text-base sm:text-lg md:text-2xl mb-6 sm:mb-8 text-center max-w-2xl font-light">Ready to grow your brand with powerful video marketing? Reach out now and let's make something amazing together.</p>
+        <p className="text-white text-base sm:text-lg md:text-2xl mb-6 sm:mb-8 text-center max-w-2xl font-light">
+        Leads stuck? Let them flow — with Leads Flow Media.
+        </p>
           
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-10 justify-center items-center w-full max-w-3xl mb-8">
           {contactInfo.map((info) => (

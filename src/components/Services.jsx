@@ -3,7 +3,7 @@ import { FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa'
 import { MdSupportAgent } from 'react-icons/md'
 import AnimatedTitle from './Animated'
 import ServiceCard from './ServiceCard'
-
+import ribbon from '../assets/ribbon_Vector-p-2600.png'
 const services = [
    {
       icon: <FaLinkedin className="text-5xl md:text-6xl text-[#0077b5] drop-shadow" />, // LinkedIn
@@ -33,7 +33,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="w-full py-16 " id="services">
+    <section className="relative w-full py-16 " id="services">
+      <img src={ribbon} alt="Background" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" />
       <div className="max-w-6xl mx-auto px-4">
         <AnimatedTitle>
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-[#53c926]">Our Services</h2>
