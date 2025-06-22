@@ -18,7 +18,7 @@ const About = () => {
 
         {/* Right side: Text Content */}
         <div className="md:w-1/2 text-lg sm:text-xl md:text-2xl leading-relaxed">
-          <p className="mb-4">At Leads flowMedia, We help coaches, consultants, founders, personal brands turn videos into lead machines.</p>
+          <p className="mb-4">At LeadsFlow Media, We help coaches, consultants, founders, personal brands turn videos into lead machines.</p>
           <p className="mb-4">Our strategy blends storytelling, hooks, and automation—so your content doesn't just get seen, it brings you clients.</p>
           <p className="mb-4">We believe that every reel, post, and video view should bring you one step closer to business growth.</p>
           <p>From visibility to conversions, we build systems that grow your brand and your business.</p>
