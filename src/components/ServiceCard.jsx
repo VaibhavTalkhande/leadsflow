@@ -72,6 +72,10 @@ const StyledWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .card__content {
     display: flex;
@@ -181,6 +185,14 @@ const StyledWrapper = styled.div`
     }
     .card__desc {
       font-size: 0.95em;
+    }
+    .card__pill {
+      font-size: 0.85em;
+      padding: 0.3em 0.7em;
+      max-width: 90vw;
+      white-space: normal;
+      word-break: break-word;
+      text-align: center;
     }
   }
 `;

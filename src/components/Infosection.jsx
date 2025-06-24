@@ -11,7 +11,7 @@ const problems = [
 ]
 const solutions = [
   'Hook-based video strategies built to convert views into leads',
-  'Done-for-you viral content tailored to your niche and audience',
+  "Viral content made just for you and your audience",
   'Clear growth roadmap with automated funnels + lead magnets',
   'Weekly updates, real-time analytics, and growth reporting',
 ]

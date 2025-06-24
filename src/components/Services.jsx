@@ -8,26 +8,26 @@ const services = [
    {
       icon: <FaLinkedin className="text-5xl md:text-6xl text-[#0077b5] drop-shadow" />, // LinkedIn
       pill: 'Lead Generation',
-      title: <>Ace LinkedIn with <span className="text-[#53c926] font-extrabold italic">Brand Persona!</span></>,
-      desc: "Let's make your brand standout with a full personalized profile optimization. We specialize in crafting creative banners and informative carousels. Our content includes strong CTA, strategic keywords, and engaging stories.",
+      title: <>Content that <span className="text-[#53c926] font-extrabold italic">Converts</span></>,
+      desc: "We craft LinkedIn content that builds authority, sparks real conversations, and leads to high-value client calls. We turn your expertise into posts that start conversations, build authority, and attract clients.",
     },
   {
     icon: <FaInstagram className="text-5xl md:text-6xl text-[#fd5949] drop-shadow" />, // Instagram
-    pill: 'Organic Growth',
-    title: <>Conquer Insta with <span className="text-[#53c926] font-extrabold italic">Viral Content!</span></>,
-    desc: 'Short-form content is the future. At LeadFlowMedia, we craft your journey to getting viral on Insta with end-to-end management. We provide in-house production and confident creators who excel at hooking audiences.',
+    pill: 'Reels That Sell',
+    title: <>Reels That Sell<span className="text-[#53c926] font-extrabold italic"> — Not Just Go Viral</span></>,
+    desc: "We craft thumb-stopping short-form videos that aren't just trendy—they hook, hold, and convert. Your story + our strategy = content that brings clients.",
   },
   {
     icon: <FaYoutube className="text-5xl md:text-6xl text-[#ff0000] drop-shadow" />, // YouTube
-    pill: 'Loyal Community',
+    pill: 'Storytelling That Rules',
     title: <>Rule YT with <span className="text-[#53c926] font-extrabold italic">Storytelling!</span></>,
-    desc: "Let your brand story resonate with your target audience through our creative storytelling. From detailed research, scripting, and high production quality to seamless editing and insightful analytics, we've got your back.",
+    desc: "Let your brand story truly connect with the right audience through our powerful storytelling. From deep research and thoughtful scripting to high-quality production, smooth editing, and performance insights — we handle it all.",
   },
   {
     icon: <MdSupportAgent className="text-5xl md:text-6xl text-[#53c926] drop-shadow" />, // Consultation
     pill: 'Consultation',
-    title: <>Consultation by <span className="text-[#53c926] font-extrabold italic">Founder & Team</span></>,
-    desc: "We've spent years growing multiple brands from scratch. We know how to make your content stand out and go viral. Want us to guide your in-house team to 2x your growth? Looking to build a strong personal brand?",
+    title: <>Consultation by <span className="text-[#53c926] font-extrabold italic">Founder & Experts</span></>,
+    desc: "We know what it takes to grow online today. We turn ideas into content that people can't ignore.",
   }
 ]
 
