@@ -48,7 +48,7 @@ const Hero = () => {
     <div className="relative flex flex-col bg-linear-60 items-center justify-center font-semibold text-center pt-5"
       style={{
         background: 'radial-gradient(circle at center, #00181c 0%,#000 100%)'
-      }}>
+      }} id="hero">
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-4 md:px-12 items-center relative  pb-4 mb-4">
         <div className="flex items-center w-full lg:w-auto justify-between lg:justify-start gap-4">
           <img src={LeadsflowMediaLogo} alt="Leadsflow Media Logo" className="h-16 md:h-20" />
